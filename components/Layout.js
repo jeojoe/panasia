@@ -7,18 +7,22 @@ export default ({ children, title = 'Panasia Progressive Technology (PTT)' }) =>
       <title>{ title }</title>
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBG3FU2WDDPbHcVrSNc67YNkE6koltVh-g&callback=initMap" />
+      <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" />
       <link rel="stylesheet" type="text/css" href="/static/normalize.css" />
       <link rel="stylesheet" type="text/css" href="/static/skeleton.css" />
     </Head>
     <nav>
       <div className="logo">
-        <div className="company-logo">
-          <h1><strong>PPT</strong></h1>
-        </div>
-        <div className="company-name">
-          <h4><strong>PANASIA</strong> PROGRESSIVE TECHNOLOGY CO., LTD.</h4>
-        </div>
+        <Link href="/">
+          <div className="logo-wrapper">
+            <div className="company-logo">
+              <h1><strong>PPT</strong></h1>
+            </div>
+            <div className="company-name">
+              <h4><strong>PANASIA</strong> PROGRESSIVE TECHNOLOGY CO., LTD.</h4>
+            </div>
+          </div>
+        </Link>
       </div>
       <div className="menu">
         <div className="item">
@@ -45,11 +49,16 @@ export default ({ children, title = 'Panasia Progressive Technology (PTT)' }) =>
     <style jsx>{`
       nav {
         box-sizing: border-box;
-        padding: 5px 10%;
+        padding: 5px 10% 4px;
         position: fixed;
         width: 100%;
-        background-color: rgba(0,0,0,0.5);
+        background-color: rgba(0,0,0,1);
+        border-bottom: 1px solid #444;
         z-index: 999;
+      }
+      
+      .logo-wrapper {
+        cursor: pointer;
       }
 
       .logo {
@@ -77,7 +86,7 @@ export default ({ children, title = 'Panasia Progressive Technology (PTT)' }) =>
       }
 
       .company-name h4 {
-        font-size: 20px;
+        font-size: 18px;
         margin: 0;
         padding: 0;
         letter-spacing: 0.1px;
@@ -92,6 +101,7 @@ export default ({ children, title = 'Panasia Progressive Technology (PTT)' }) =>
         display: inline-block;
         verticle-align: middle;
         margin: 12px 15px;
+        font-family: Oswald;
       }
 
       .item a {
