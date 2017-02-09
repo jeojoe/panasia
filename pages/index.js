@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import Link from 'next/prefetch';
 import Layout from '../components/Layout';
-import HomeBanner from '../components/HomeBanner';
+import Banner from '../components/Banner';
 import Contact from '../components/Contact';
 
 export default class extends Component {
   render() {
     return (
       <Layout>
-        <HomeBanner
+        <Banner
           text="LEADING IN REBAR COUPLING TECHNOLOGY"
           subText="Learn Our Competences"
           hasButton

@@ -1,10 +1,10 @@
 import React from 'react';
 import Layout from '../components/Layout';
-import HomeBanner from '../components/HomeBanner';
+import Banner from '../components/Banner';
 
 export default () => (
   <Layout>
-    <HomeBanner
+    <Banner
       text="WHY PPT COUPLER ?"
       subText="There are several ways to connect steel bars but using PPT coupler is one of the most suitable ways based on these following reasons."
       paddingTop="140px"
