@@ -36,6 +36,9 @@ export default ({ children, title = 'Panasia Progressive Technology (PTT)' }) =>
           <Link href="/services"><a>SERVICES</a></Link>
         </div>
         <div className="item">
+          <Link href="/projects"><a>PROJECTS</a></Link>
+        </div>
+        <div className="item">
           <Link href="/faq"><a>FAQ</a></Link>
         </div>
         <div className="item button">
