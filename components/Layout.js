@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/prefetch';
+import Footer from './Footer';
 
 export default ({ children, title = 'Panasia Progressive Technology (PTT)' }) => (
   <div>
@@ -43,9 +44,7 @@ export default ({ children, title = 'Panasia Progressive Technology (PTT)' }) =>
       </div>
     </nav>
     { children }
-    <footer>
-      
-    </footer>
+    <Footer />
     <style jsx>{`
       nav {
         box-sizing: border-box;
