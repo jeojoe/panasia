@@ -51,8 +51,8 @@ export default ({ children, title = 'Panasia Progressive Technology (PTT)' }) =>
         padding: 5px 10% 4px;
         position: fixed;
         width: 100%;
-        background-color: rgba(0,0,0,1);
-        border-bottom: 1px solid #444;
+        // background-color: rgba(0,0,0,1);
+        // border-bottom: 1px solid #444;
         z-index: 999;
       }
       

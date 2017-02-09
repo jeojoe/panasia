@@ -55,7 +55,7 @@ export default () => (
         font-size: 17px;
         color: #fff;
         text-decoration: none;
-        margin: 0 15px;
+        margin: 0 18px;
       }
       .item:hover {
         text-decoration: underline;
