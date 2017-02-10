@@ -22,7 +22,6 @@ export default class Products extends Component {
           text="OUR PRODUCTS"
           subText="Not only that our products are strong and cost-effective but also user-friendly. Smooth engagement helps reduce unnecessary hard work."
           height="350px" paddingTop="140px"
-          textAlign="left"
         />
         <div className="container">
           {/*<p className="choose">please choose product types</p>*/}
