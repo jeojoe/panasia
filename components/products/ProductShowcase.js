@@ -5,6 +5,9 @@ export default ({ product }) => (
         <h5 className="head-text">" SUPERIOR SOFT COLD FORGED COUPLER SYSTEM. "</h5>
         <div className="product row">
           <div className="six columns">
+            <div className="ppt product-pic" />
+          </div>
+          <div className="six columns">
             <h3>PPT COUPLER</h3>
             <p>A premium connecting joint for reinforcement bars that can overcome the disturbing limitations and problems you are facing.</p>
             <ul>
@@ -13,12 +16,12 @@ export default ({ product }) => (
             </ul>
             <button className="button-primary">ORDER NOW</button>
           </div>
-          <div className="six columns">
-            <div className="ppt product-pic" />
-          </div>
         </div>
         <hr />
         <div className="product row">
+          <div className="six columns">
+            <div className="abc product-pic" />
+          </div>
           <div className="six columns">
             <h3>ABC COUPLER</h3>
             <p>The newest model invented to be super cost-effective and high in quality.</p>
@@ -28,27 +31,37 @@ export default ({ product }) => (
             </ul>
             <button className="button-primary">ORDER NOW</button>
           </div>
-          <div className="six columns">
-            <div className="abc product-pic" />
-          </div>
         </div>
       </div>
     }
     {product === 'machine' &&
       <div className="machine">
         <h5 className="head-text">Our machines have been designed and created to serve at their maximum potential.</h5>
-        <div className="product row">
-          <div className="six columns">
-            <h3>Super Soft Cold Forging Machine</h3>
-            <div className="machine-1-1 product-pic" />
-            <div className="machine-1-2 product-pic" />
-            <button className="button-primary">ORDER NOW</button>
+        <div className="product">
+          <h3>Super Soft Cold Forging Machine</h3>
+          <div className="row">
+            <div className="six columns">
+              <div className="machine-1-1 product-pic" />
+            </div>
+            <div className="six columns">
+              <div className="machine-1-2 product-pic" />
+            </div>
           </div>
-          <div className="six columns">
-            <h3>Reinforcement Thread Rolling Machine</h3>
-            <div className="machine-2-1 machine product-pic" />
-            <div className="machine-2-2 machine product-pic" />
-            <button className="button-primary">ORDER NOW</button>
+          <div style={{ textAlign: 'right' }}>
+            <button className="button-primary right">ORDER NOW</button>
+          </div>
+          <hr />
+          <h3>Reinforcement Thread Rolling Machine</h3>
+          <div className="row">
+            <div className="six columns">
+              <div className="machine-2-1 machine product-pic" />
+            </div>
+            <div className="six columns">
+              <div className="machine-2-2 machine product-pic" />
+            </div>
+          </div>
+          <div style={{ textAlign: 'right' }}>
+            <button className="button-primary right">ORDER NOW</button>
           </div>
         </div>
       </div>
@@ -69,7 +82,7 @@ export default ({ product }) => (
       }
       .product-pic {
         border-radius: 8px;
-        margin: 6px auto 0;
+        margin: 6px auto 15px;
         width: 100%;
         height: 270px;
         background-size: cover;
