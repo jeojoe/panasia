@@ -119,18 +119,17 @@ export default class extends Component {
             margin: 0 7% 5px;
           }
           .s-3 {
-            background-image: url('/static/bg-client.png');
+            background-image: url('/static/bg-client.jpg');
             background-size: cover;
             height: 500px;
             position: relative;
             padding: 30px 0;
             margin-bottom: 60px;
-          }
-          .s-3 .container {
-            background-color: rgba(255,255,255,0.9);
-            height: 440px;
+            color: #fff;
+            text-shadow: 0px 2px 3px rgba(0,0,0,1);
           }
           .s-3 h2 {
+            color: #fff;
             letter-spacing: 0.05rem;
             font-family: Oswald;
           }

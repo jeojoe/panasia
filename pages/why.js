@@ -104,5 +104,10 @@ export default () => (
         font-style: italic;
       }
     `}</style>
+    <style jsx global>{`
+      .bg.custom {
+        background-image: url('/static/bg-2.jpg');
+      }
+    `}</style>
   </Layout>
 );

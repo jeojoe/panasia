@@ -85,6 +85,11 @@ export default class Products extends Component {
             color: #fff;
           }
         `}</style>
+        <style jsx global>{`
+          .bg.custom {
+            background-image: url('/static/bg-3.jpg');
+          }
+        `}</style>
       </Layout>
     );
   }
