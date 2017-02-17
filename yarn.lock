@@ -2513,7 +2513,7 @@ ncp@~2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/ncp/-/ncp-2.0.0.tgz#195a21d6c46e361d2fb1281ba38b91e9df7bdbb3"
 
-next@^2.0.0-beta.31:
+next@^2.0.0-beta.24:
   version "2.0.0-beta.31"
   resolved "https://registry.yarnpkg.com/next/-/next-2.0.0-beta.31.tgz#e8016911bb3dcfbc9d2b4e6f21ffe04e9354706d"
   dependencies:
