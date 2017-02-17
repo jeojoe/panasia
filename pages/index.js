@@ -116,15 +116,47 @@ export default class extends Component {
           }
         `}</style>
         <style jsx global>
-          {`
-            .s-2 a {
-              color: #2C3E50;
-              text-decoration: none;
+        {`
+          @media (min-width: 1000px) {
+            .bg {
+              -webkit-transition: background-image 1s ease-in-out;
+              -moz-transition: background-image 1s ease-in-out;
+              -o-transition: background-image 1s ease-in-out;
+              transition: background-image 1s ease-in-out;
+              animation-name: bgFade;
+              animation-timing-function: ease-in-out;
+              animation-iteration-count: infinite;
+              animation-duration: 20s;
             }
-            .s-2 a:hover {
-              text-decoration: underline;
-            }  
-          `}
+          }
+          @keyframes bgFade {
+            0% {
+              background-image: url('/static/bg-1.jpg');
+            }
+            25% {
+              background-image: url('/static/bg-2.jpg');
+            }
+            41% {
+              background-image: url('/static/bg-2.jpg'); 
+            }
+            58% {
+              background-image: url('/static/bg-3.jpg');
+            }
+            74% {
+              background-image: url('/static/bg-3.jpg'); 
+            }
+            100% {
+              background-image: url('/static/bg-1.jpg');
+            }
+          }
+          .s-2 a {
+            color: #2C3E50;
+            text-decoration: none;
+          }
+          .s-2 a:hover {
+            text-decoration: underline;
+          }  
+        `}
         </style>
       </Layout>
     );

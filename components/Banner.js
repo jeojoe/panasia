@@ -16,9 +16,8 @@ export default ({ text, subText, height = '560px', paddingTop = '200px', textAli
     </div>
     <style jsx>{`
       .bg {
-        background-image: url('/static/bg.jpg');
+        background-image: url('/static/bg-1.jpg');
         background-size: cover;
-        // background-color: #000;
         background-position: center;
         color: #fff;
       }
