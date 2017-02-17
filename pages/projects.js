@@ -12,8 +12,8 @@ export default class Services extends Component {
           height="350px" paddingTop="140px"
           textAlign="left"
         />
-        <div style={{ minHeight: '600px' }}>
-          NO SERVICES HERE !
+        <div className="container" style={{ minHeight: '600px' }}>
+          Waiting for contents !
         </div>
       </Layout>
     );

@@ -9,6 +9,7 @@ export default class Services extends Component {
       <Layout>
         <Banner
           text="CONTACT US"
+          subText="Achieve Success Together with Us."
           height="350px" paddingTop="140px"
           textAlign="left"
         />
