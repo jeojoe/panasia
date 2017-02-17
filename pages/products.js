@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
+import jump from 'jump.js';
+import c from 'classnames';
 import Layout from '../components/Layout';
 import Banner from '../components/Banner';
 import ProductShowcase from '../components/products/ProductShowcase';
-import c from 'classnames';
 
 export default class Products extends Component {
   constructor(props) {
@@ -23,18 +24,24 @@ export default class Products extends Component {
           subText="Not only that our products are strong and cost-effective but also user-friendly. Smooth engagement helps reduce unnecessary hard work."
           height="350px" paddingTop="140px"
         />
-        <div className="container">
+        <div className="container jump-target">
           {/*<p className="choose">please choose product types</p>*/}
           <div className="buttons">
             <div
               className={c('button-side', { selected: product === 'rebar' })}
-              onClick={() => this.setState({ product: 'rebar' })}
+              onClick={() =>
+                this.setState({ product: 'rebar' }, () =>
+                  jump('.jump-target'))
+              }
             >
               REBAR COUPLERS
             </div>
             <div
               className={c('button-side', { selected: product === 'machine' })}
-              onClick={() => this.setState({ product: 'machine' })}
+              onClick={() =>
+                this.setState({ product: 'machine' }, () =>
+                  jump('.jump-target'))
+              }
             >
               MACHINES
             </div>
