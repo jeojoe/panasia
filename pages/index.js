@@ -13,7 +13,7 @@ export default class extends Component {
           subText="Learn Our Competences"
           hasButton
         />
-        <div className="s-1 container">
+        <div className="s-1 container jump-target">
           <h3 className="head 1">20 Year of Experience and R&D</h3>
           <div className="line"></div>
           <p>"We are an expert in parallel-threaded mechanical coupler system with over 20 years of direct experience and continuous R&D. Combining soft cold forged technology with thread rolling process, we guarantee you with a perfectly stronger connection than the parent bars."</p>

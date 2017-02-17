@@ -1,3 +1,5 @@
+import jump from 'jump.js';
+
 export default ({ text, subText, height = '560px', paddingTop = '200px', textAlign = 'center', hasButton }) => (
   <div>
     <div className="bg" style={{ height, textAlign }}>
@@ -6,7 +8,10 @@ export default ({ text, subText, height = '560px', paddingTop = '200px', textAli
         {subText && <p className="sub">{subText}</p>}
       </div>
       {hasButton &&
-        <div className="arrow">↓</div>
+        <div
+          className="arrow"
+          onClick={() => jump('.jump-target', { offset: -70 })}
+        >↓</div>
       }
     </div>
     <style jsx>{`
@@ -31,6 +36,7 @@ export default ({ text, subText, height = '560px', paddingTop = '200px', textAli
         -moz-animation: bounce 2s infinite;
         -webkit-animation: bounce 2s infinite;
         animation: bounce 2s infinite;
+        cursor: pointer;
       }
       @keyframes bounce {
         0%, 20%, 50%, 80%, 100% {
