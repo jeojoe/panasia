@@ -21,17 +21,17 @@ export default class extends Component {
         <div className="s-2 container">
           <div className="row">
             <div className="four columns">
-              <div className="img" />
+              <div className="img one" />
               <Link href="/products"><h5>REBAR COUPLERS</h5></Link>
               <p>A premium connecting joint for reinforcement bars that can overcome the disturbing limitations and problems you are facing.</p>
             </div>
             <div className="four columns">
-              <div className="img" />
+              <div className="img two" />
               <Link href="/services"><h5>SERVICES</h5></Link>
               <p>We work hard to make sure that you succeed. We offer you on-site service, factory production and consultant service.</p>
             </div>
             <div className="four columns">
-              <div className="img" />
+              <div className="img three" />
               <Link href="/machines"><h5>MACHINES</h5></Link>
               <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.</p>
             </div>
@@ -41,18 +41,27 @@ export default class extends Component {
           <div className="container">
             <div className="row">
               <div className="five columns">
-                <h3>Our Client</h3>
+                <h2>Our Clients</h2>
               </div>
-              <div className="seven columns">(client list and works example)</div>
+              <div className="seven columns">
+                <p>We are empowering success of our clients. (Wating final details)</p>
+                <p>Central CNX</p>
+                <p>อู่ซ่อมรถสายสีม่วง และสายสีน้ำเงิน</p>
+                <p>Renaissance Sukhumvit 57</p>
+              </div>
             </div>
           </div>
+        </div>
+        <div className="container s-contact">
+          <h1>Achieve Success Together</h1>
+          <hr />
         </div>
         <Contact />
         <style jsx>{`
           .s-1 {
             padding: 60px 0;
           }
-          .s-1 h3, .s-3 h3, .s-4 h3 {
+          .s-1 h3, .s-3 h2, .s-4 h3 {
             text-align: center;
             font-weight: 600;
             color: #2C3E50;
@@ -80,15 +89,25 @@ export default class extends Component {
             margin-bottom: 100px;
           }
           .s-2 .four {
-            background-color: #eee;
             height: 400px;
             margin-bottom: 15px;
             text-align: center;
           }
           .s-2 .img {
-            background-color: #ddd;
             width: 100%;
             height: 200px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 5px;
+          }
+          .s-2 .img.one {
+            background-image: url('/static/index/s2-1.jpg');
+          }
+          .s-2 .img.two {
+            background-image: url('/static/index/s2-2.jpg');
+          }
+          .s-2 .img.three {
+            background-image: url('/static/index/s2-3.jpg');
           }
           .s-2 h5 {
             margin: 20px 7% 5px;
@@ -111,8 +130,16 @@ export default class extends Component {
             background-color: rgba(255,255,255,0.9);
             height: 440px;
           }
+          .s-3 h2 {
+            letter-spacing: 0.05rem;
+            font-family: Oswald;
+          }
           .s-3 .columns {
             padding-top: 50px
+          }
+          .s-contact h1 {
+            text-align: center;
+            font-family: Oswald;
           }
         `}</style>
         <style jsx global>
