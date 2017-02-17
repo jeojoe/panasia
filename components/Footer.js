@@ -2,7 +2,7 @@ import Link from 'next/prefetch';
 
 export default () => (
   <div className="footer">
-    <div className="bg" />
+    <div className="bg-footer" />
     <div className="overlay">
       <div className="container">
         <div className="row">
@@ -29,8 +29,8 @@ export default () => (
         height: 300px;
         position: relative;
       }
-      .bg {
-        background-image: url('/static/bg.jpg');
+      .bg-footer {
+        background-image: url('/static/bg-1.jpg');
         background-size: cover;
         background-position: bottom;
         height: 100%;

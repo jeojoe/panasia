@@ -57,7 +57,7 @@ export default class extends Component {
         </div>
         <style jsx>{`
           .contact {
-            padding: 30px 0;
+            padding: 30px 0 50px;
           }
           .button-primary {
             float: right;
