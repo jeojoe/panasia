@@ -108,6 +108,19 @@ export default () => (
       .bg.custom {
         background-image: url('/static/bg-2.jpg');
       }
+      .banner-wrapper {
+        padding-top: 150px;
+      }
+      @media (max-width: 620px) {
+        .banner-wrapper {
+          padding-top: 90px;
+        }
+      }
+      // @media (max-width: 489px) {
+      //   .banner-wrapper {
+      //     padding-top: 70px;
+      //   }
+      // }
     `}</style>
   </Layout>
 );

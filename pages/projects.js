@@ -15,6 +15,16 @@ export default class Services extends Component {
         <div className="container" style={{ minHeight: '600px' }}>
           Waiting for contents !
         </div>
+        <style jsx global>{`
+          .banner-wrapper {
+            padding-top: 150px;
+          }
+          @media (max-width: 407px) {
+            .banner-wrapper {
+              padding-top: 120px;
+            }
+          }
+        `}</style>
       </Layout>
     );
   }

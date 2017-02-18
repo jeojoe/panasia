@@ -1,9 +1,9 @@
 import jump from 'jump.js';
 
-export default ({ text, subText, height = '560px', paddingTop = '200px', textAlign = 'center', hasButton }) => (
+export default ({ text, subText, height = '560px', textAlign = 'center', hasButton }) => (
   <div>
     <div className="bg custom" style={{ height, textAlign }}>
-      <div className="container wrapper" style={{ paddingTop }}>
+      <div className="container banner-wrapper">
         <h1 className="main">{text}</h1>
         {subText && <p className="sub">{subText}</p>}
       </div>

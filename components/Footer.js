@@ -60,6 +60,20 @@ export default () => (
       .item:hover {
         text-decoration: underline;
       }
+      @media (max-width: 1200px) {
+        .item {
+          margin: 0 0 12px 100px;
+          display: block;
+        }
+        .footer {
+          height: 550px;
+        }
+      }
+      @media (max-width: 550px) {
+        .item {
+          margin: 0 0 12px;
+        }
+      }
     `}</style>
   </div>
 );

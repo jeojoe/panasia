@@ -14,6 +14,11 @@ export default class Services extends Component {
           textAlign="left"
         />
         <Contact />
+        <style jsx global>{`
+          .banner-wrapper {
+            padding-top: 150px;
+          }
+        `}</style>
       </Layout>
     );
   }

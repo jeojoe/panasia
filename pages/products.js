@@ -84,10 +84,31 @@ export default class Products extends Component {
             background-color: #2c3e50;
             color: #fff;
           }
+          @media (max-width: 550px) {
+            .buttons {
+              height: 60px;
+            }
+            .button-side {
+              font-size: 18px;
+            }
+          }
         `}</style>
         <style jsx global>{`
           .bg.custom {
             background-image: url('/static/bg-3.jpg');
+          }
+          .banner-wrapper {
+            padding-top: 150px;
+          }
+          @media (max-width: 720px) {
+            .banner-wrapper {
+              padding-top: 120px;
+            }
+          }
+          @media (max-width: 489px) {
+            .banner-wrapper {
+              padding-top: 90px;
+            }
           }
         `}</style>
       </Layout>

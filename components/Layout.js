@@ -1,18 +1,20 @@
 import React, { Component } from 'react';
 import Head from 'next/head';
 import Link from 'next/prefetch';
+import c from 'classnames';
 import Footer from './Footer';
 
 export default class Layout extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      navTop: true,
+      navOpen: false,
     };
   }
 
   render() {
     const { children, title = 'Panasia Progressive Technology (PTT)' } = this.props;
+    const { navOpen } = this.state;
     return (
       <div>
         <Head>
@@ -36,7 +38,13 @@ export default class Layout extends Component {
               </div>
             </Link>
           </div>
-          <div className="menu">
+          <button
+            className="button menu-mobile-button"
+            onClick={() => this.setState({ navOpen: !navOpen })}
+          >
+            {navOpen ? 'CLOSE' : 'MENU'}
+          </button>
+          <div className={c('menu', { active: navOpen })}>
             <div className="item">
               <Link href="/why"><a>WHY PPT</a></Link>
             </div>
@@ -79,6 +87,7 @@ export default class Layout extends Component {
             verticle-align: middle;
             width: 360px;
             color: white;
+            position: relative;
           }
           
           .company-logo {
@@ -128,6 +137,48 @@ export default class Layout extends Component {
 
           .item.button {
             border-color: #fff;
+          }
+
+          .menu-mobile-button {
+            display: none;
+            color: #fff;
+            position: absolute;
+            top: 20px;
+            right: 15px;
+          }
+
+          @media (max-width: 1200px) {
+            nav {
+              padding: 5px 3% 4px;
+            }
+          }
+          @media (max-width: 1000px) {
+            nav {
+              padding: 5px 10px 4px;
+            }
+            .logo {
+              width: 150px;
+            }
+            .menu {
+              display: none;
+            }
+            .menu-mobile-button {
+              display: block;
+            }
+            .company-logo {
+              display: none;
+            }
+            .company-name {
+              margin: 10px 5px;
+            }
+            .menu.active {
+              display: block;
+              float: none;
+            }
+            .menu .item {
+              display: block;
+              text-align: center;
+            }
           }
         `}</style>
       </div>

@@ -141,8 +141,7 @@ export default class extends Component {
             font-family: Oswald;
           }
         `}</style>
-        <style jsx global>
-        {`
+        <style jsx global>{`
           @media (min-width: 1000px) {
             .bg {
               -webkit-transition: background-image 1s ease-in-out;
@@ -181,9 +180,21 @@ export default class extends Component {
           }
           .s-2 a:hover {
             text-decoration: underline;
-          }  
-        `}
-        </style>
+          }
+          .banner-wrapper {
+            padding-top: 200px;
+          }
+          @media (max-width: 720px) {
+            .banner-wrapper {
+              padding-top: 150px;
+            }
+          }
+          @media (max-width: 489px) {
+            .banner-wrapper {
+              padding-top: 120px;
+            }
+          }
+        `}</style>
       </Layout>
     );
   }
